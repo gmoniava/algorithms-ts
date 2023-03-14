@@ -1,0 +1,7 @@
+# ignore the dist directory
+dist/
+
+# ignore Node.js modules
+node_modules/
+
+ 
