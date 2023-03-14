@@ -14,7 +14,7 @@ Compile your TypeScript code to JavaScript by running the following command:
 
 `npx tsc`
 
-This will generate a new dist directory in your project directory, which will contain the compiled JavaScript files.
+This will generate a new `dist` directory in your project directory, which will contain the compiled JavaScript files.
 
 Run your program by entering the following command in your terminal:
 
