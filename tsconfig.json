@@ -4,6 +4,7 @@
     "module": "commonjs",
     "outDir": "./dist",
     "strict": true,
+    "lib": ["dom", "es2020"],
     "esModuleInterop": true
   },
   "include": ["src/**/*"]

@@ -1,5 +1,4 @@
-
-Inside `src/index.ts` you can test different algorithms located in the same directory:
+You can use `src/index.ts` to demo different algotithms:
 
 ```
 import { bubbleSort } from "./sorting";
