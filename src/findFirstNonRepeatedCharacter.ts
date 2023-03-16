@@ -19,13 +19,13 @@ let findFirstNonRepeatedCharacter = (str: string) => {
   let result = null;
   // We have letters which occured once, find the one which was first in the string
   Object.entries(letters)
-    .filter(([k, t]) => t !== null)
+    .filter((x): x is [string, number] => x[1] !== null)
     .forEach(([k, v]) => {
       if (min === undefined) {
-        min = v!;
+        min = v;
         result = k;
-      } else if (v! < min) {
-        min = v!;
+      } else if (v < min) {
+        min = v;
         result = k;
       }
     });

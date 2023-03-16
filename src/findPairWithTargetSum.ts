@@ -5,15 +5,14 @@
 // Input
 //   [1, 2, 3, 4, 5], 7
 // Output
-//   [2, 5]
+//   [3, 4]
 let findPairWithTargetSum = (arr: number[], sum: number) => {
   let foundNums: Record<number, true> = {};
   for (let i = 0; i < arr.length; i++) {
     let item = arr[i];
     let pair = sum - item;
-
     if (foundNums[pair]) {
-      return [item, pair];
+      return [pair, item];
     } else {
       foundNums[item] = true;
     }
