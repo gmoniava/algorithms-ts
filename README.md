@@ -1,3 +1,5 @@
+## Introduction
+
 This repository contains some questions about algorithms and their solutions in Typescript.
 
 ## Notes about the project structure
