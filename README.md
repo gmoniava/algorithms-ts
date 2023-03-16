@@ -1,6 +1,14 @@
-You can use `src/index.ts` to demo different algotithms:
+This repository contains some questions about algorithms and their solutions in Typescript.
+
+## Notes about the project structure
+
+Algorithm questions and solutions are located inside the `src` folder.
+Inside that folder you will also find `index.ts` file, where you can
+run demos of those algorithms, like here:
 
 ```
+// index.ts
+
 import { bubbleSort } from "./sorting";
 
 const unsortedArr = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5];
