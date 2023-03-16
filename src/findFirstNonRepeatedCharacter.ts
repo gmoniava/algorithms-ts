@@ -1,7 +1,11 @@
-// Question:
+// Question
 // Write a function that takes in a string and returns the first non-repeated character in the string.
 // If all characters are repeated, the function should return null.
-export let findFirstNonRepeatedCharacter = (str: string) => {
+// Input
+//  "aabbcde"
+// Output
+//  "c"
+let findFirstNonRepeatedCharacter = (str: string) => {
   let letters: Record<string, any> = {};
   for (let i = 0; i < str.length; i++) {
     let current = str[i];
@@ -27,3 +31,5 @@ export let findFirstNonRepeatedCharacter = (str: string) => {
     });
   return result;
 };
+
+export default findFirstNonRepeatedCharacter;

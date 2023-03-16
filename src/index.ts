@@ -1,3 +1,3 @@
-import { findPairWithTargetSum } from "./findPairWithTargetSum";
-import { findFirstNonRepeatedCharacter } from "./findFirstNonRepeatedCharacter";
+import findPairWithTargetSum from "./findPairWithTargetSum";
+import findFirstNonRepeatedCharacter from "./findFirstNonRepeatedCharacter";
 console.log(findFirstNonRepeatedCharacter("aabbcde"));
