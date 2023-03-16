@@ -7,7 +7,7 @@
 // Output
 //   [2, 5]
 let findPairWithTargetSum = (arr: number[], sum: number) => {
-  let foundNums: Record<number, any> = {};
+  let foundNums: Record<number, true> = {};
   for (let i = 0; i < arr.length; i++) {
     let item = arr[i];
     let pair = sum - item;

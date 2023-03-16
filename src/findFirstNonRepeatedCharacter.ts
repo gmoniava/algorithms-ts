@@ -6,7 +6,7 @@
 // Output
 //  "c"
 let findFirstNonRepeatedCharacter = (str: string) => {
-  let letters: Record<string, any> = {};
+  let letters: Record<string, number | null> = {};
   for (let i = 0; i < str.length; i++) {
     let current = str[i];
     if (letters[current] === undefined) letters[current] = i;
@@ -22,10 +22,10 @@ let findFirstNonRepeatedCharacter = (str: string) => {
     .filter(([k, t]) => t !== null)
     .forEach(([k, v]) => {
       if (min === undefined) {
-        min = v;
+        min = v!;
         result = k;
-      } else if (v < min) {
-        min = v;
+      } else if (v! < min) {
+        min = v!;
         result = k;
       }
     });
