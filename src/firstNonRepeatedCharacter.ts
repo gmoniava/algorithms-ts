@@ -5,7 +5,7 @@
 //  "aabbcde"
 // Output
 //  "c"
-let findFirstNonRepeatedCharacter = (str: string) => {
+let firstNonRepeatedCharacter = (str: string) => {
   let letters: Record<string, number | null> = {};
   for (let i = 0; i < str.length; i++) {
     let current = str[i];
@@ -32,4 +32,4 @@ let findFirstNonRepeatedCharacter = (str: string) => {
   return result;
 };
 
-export default findFirstNonRepeatedCharacter;
+export default firstNonRepeatedCharacter;

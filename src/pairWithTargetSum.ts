@@ -6,7 +6,7 @@
 //   [1, 2, 3, 4, 5], 7
 // Output
 //   [3, 4]
-let findPairWithTargetSum = (arr: number[], sum: number) => {
+let pairWithTargetSum = (arr: number[], sum: number) => {
   let foundNums: Record<number, true> = {};
   for (let i = 0; i < arr.length; i++) {
     let item = arr[i];
@@ -20,4 +20,4 @@ let findPairWithTargetSum = (arr: number[], sum: number) => {
   return [];
 };
 
-export default findPairWithTargetSum;
+export default pairWithTargetSum;
