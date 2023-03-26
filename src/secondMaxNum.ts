@@ -1,4 +1,3 @@
-// Question
 // Given an array of integers, find the second largest element in the array.
 // If there are multiple occurrences of the second largest element, return any one of them.
 // Input

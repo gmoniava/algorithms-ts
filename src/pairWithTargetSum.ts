@@ -1,4 +1,3 @@
-// Question:
 // Given an array of integers and a target integer, write a function to find a pair of
 // numbers in the array that add up to the target. If multiple pairs exist, return any
 // one of them. If no such pair exists, return an empty array.
