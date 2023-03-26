@@ -33,6 +33,4 @@ Run your program by entering the following command in your terminal:
 
 There are test cases for each question, run the tests with:
 
-```
-npm test
-```
+`npm test`
