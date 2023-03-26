@@ -29,8 +29,6 @@ Run your program by entering the following command in your terminal:
 
 `node dist/index.js`
 
-## Tests
-
-There are test cases for each question, run the tests with:
+There is also a `tests` folder for test cases, you can run the tests using:
 
 `npm test`
