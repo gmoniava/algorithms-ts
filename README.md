@@ -28,3 +28,11 @@ This will generate a new `dist` directory in your project directory, which will 
 Run your program by entering the following command in your terminal:
 
 `node dist/index.js`
+
+## Tests
+
+Each algorithm has corresponding tests. Run the tests with:
+
+```
+npm test
+```
