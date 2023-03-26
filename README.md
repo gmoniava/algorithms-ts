@@ -31,7 +31,7 @@ Run your program by entering the following command in your terminal:
 
 ## Tests
 
-Each algorithm has corresponding tests. Run the tests with:
+There are test cases for each question, run the tests with:
 
 ```
 npm test
