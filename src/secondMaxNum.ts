@@ -5,7 +5,8 @@
 // Output
 //  11
 
-let secondMax = (input: number[]) => {
+let secondMaxNum = (input: number[]) => {
+  if (input.length < 2) return;
   let max = Math.max(input[0], input[1]),
     secondMax = Math.min(input[0], input[1]);
 
@@ -23,4 +24,4 @@ let secondMax = (input: number[]) => {
   return secondMax;
 };
 
-export default secondMax;
+export default secondMaxNum;
