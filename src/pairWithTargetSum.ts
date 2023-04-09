@@ -5,18 +5,20 @@
 //   [1, 2, 3, 4, 5], 7
 // Output
 //   [3, 4]
-let pairWithTargetSum = (arr: number[], sum: number) => {
-  let foundNums: Record<number, true> = {};
+let pairOfCurrentItemWithTargetSum = (arr: number[], targetSum: number) => {
+  let encounteredNumbers: Record<number, true> = {};
   for (let i = 0; i < arr.length; i++) {
-    let item = arr[i];
-    let pair = sum - item;
-    if (foundNums[pair]) {
-      return [pair, item];
-    } else {
-      foundNums[item] = true;
+    let currentItem = arr[i];
+    let pairOfCurrentItem = targetSum - currentItem;
+
+    // If we already saw the pair for current item, it means we are done
+    if (encounteredNumbers[pairOfCurrentItem]) {
+      return [pairOfCurrentItem, currentItem];
     }
+
+    encounteredNumbers[currentItem] = true;
   }
   return [];
 };
 
-export default pairWithTargetSum;
+export default pairOfCurrentItemWithTargetSum;

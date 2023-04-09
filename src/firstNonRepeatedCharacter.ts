@@ -6,17 +6,21 @@
 //  "c"
 let firstNonRepeatedCharacter = (str: string) => {
   let letters: Record<string, number | null> = {};
+
+  // Let's just keep track of letters which we encountered only once
   for (let i = 0; i < str.length; i++) {
     let current = str[i];
     if (letters[current] === undefined) letters[current] = i;
     else {
-      // No need to keep track of letters which occured more than once
+      // Encountered more than once, not interested anymore
       letters[current] = null;
     }
   }
   let min: number;
   let result = null;
-  // We have letters which occured once, find the one which was first in the string
+
+  // Now we have letters which occured once, we need to select the one which was earliest in the string,
+  // for that we need to look at the indexes we stored before
   Object.entries(letters)
     .filter((x): x is [string, number] => x[1] !== null)
     .forEach(([k, v]) => {
