@@ -7,7 +7,7 @@ describe("secondMaxNum", () => {
   });
 
   it("returns the second largest element in the array if there are multiple occurrences", () => {
-    const arr = [1, 2, 3, 4, 4, 5];
+    const arr = [1, 2, 3, 4, 4, 5, 5];
     expect(secondMaxNum(arr)).toEqual(4);
   });
 
