@@ -6,19 +6,19 @@
 // Output
 //  [2,3]
 let commonElements = (arr1: number[], arr2: number[]) => {
-  let numsSeen: Record<number, boolean> = {};
+  let numsSeenInSecondArr: Record<number, boolean> = {};
+  let result: number[] = [];
 
   // First let's just store which integers we encountered in the second array
   arr2.forEach((x) => {
-    numsSeen[x] = true;
+    numsSeenInSecondArr[x] = true;
   });
-  let result: number[] = [];
 
-  // Now, iterate first array and see if any of its elements are in the map we created above
+  // Now, iterate first array and see if we already saw this element in the second array
   arr1.forEach((y) => {
-    if (numsSeen[y]) {
+    if (numsSeenInSecondArr[y]) {
       result.push(y);
-      delete numsSeen[y];
+      delete numsSeenInSecondArr[y];
     }
   });
 
