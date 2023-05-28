@@ -1,9 +1,6 @@
 // Write a function that takes in a string and returns the first non-repeated character in the string.
 // If all characters are repeated, the function should return null.
-// Input
-//  "aabbcde"
-// Output
-//  "c"
+
 let firstNonRepeatedCharacter = (str: string) => {
   let lettersOccuringOnce: Record<string, boolean | null> = {};
 

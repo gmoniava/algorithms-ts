@@ -1,10 +1,7 @@
 // Given two arrays of integers, write a function that returns an array containing only
 // the elements that appear in both arrays. The returned array should not contain any
 // duplicates, and the order of the elements should be the same as in the first array.
-// Input
-//  [1, 2, 3], [3, 2, 4]
-// Output
-//  [2,3]
+
 let commonElements = (arr1: number[], arr2: number[]) => {
   let numsSeenInSecondArr: Record<number, boolean> = {};
   let result: number[] = [];

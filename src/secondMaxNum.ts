@@ -1,9 +1,5 @@
 // Given an array of integers, find the second largest element in the array.
 // If there are multiple occurrences of the second largest element, return any one of them.
-// Input
-//  [1, 2, 3, 9, 50, 7, 11]
-// Output
-//  11
 
 let secondMaxNum = (input: number[]) => {
   if (input.length < 2) return;

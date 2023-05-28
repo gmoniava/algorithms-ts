@@ -3,11 +3,6 @@
 // for arrays of any length and should return 0 if the array contains fewer
 // than 2 elements.
 
-// Input
-//  [3, 5, 1, 8, 2]
-// Output
-//  7
-
 let maxDiff = (input: number[]): number => {
   let min = input[0],
     max = input[0];
