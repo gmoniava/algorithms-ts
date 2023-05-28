@@ -6,16 +6,20 @@ let binarySearch = (
   input: number[],
   target: number,
   start: number = 0,
-  end: number = input.length
+  end: number = input.length - 1
 ): number => {
-  if (input.length === 0 || start >= end) return -1;
-
   let middle = start + Math.floor((end - start) / 2);
+
+  if (input.length == 0) return -1;
+
   if (input[middle] == target) return middle;
+
+  if (start >= end) return -1;
+
   if (input[middle] < target) {
     return binarySearch(input, target, middle + 1, end);
   } else {
-    return binarySearch(input, target, start, middle);
+    return binarySearch(input, target, start, middle - 1);
   }
 };
 
