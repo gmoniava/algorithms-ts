@@ -7,6 +7,7 @@ describe("binarySearch", () => {
     expect(binarySearch(sortedArray, 7)).toBe(3);
     expect(binarySearch(sortedArray, 1)).toBe(0);
     expect(binarySearch(sortedArray, 11)).toBe(5);
+    expect(binarySearch(sortedArray, 9)).toBe(4);
   });
   it("Can't find element", () => {
     const sortedArray = [1, 3, 5, 7, 9, 11];
